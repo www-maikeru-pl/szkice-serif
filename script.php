@@ -62,25 +62,45 @@ $popularity = sortByPopularity($words, $ignored);
 echo "<body style='line-height:200%;'>";
 foreach($popularity as $count => $wordsOfThisCount) {
   echo "<h3> $count occurrence(s)</h3>";
+  echo "<table border=1>";
   foreach($wordsOfThisCount as $word) {
+    echo "<td>";
     addToIgnoredLink($word);
+    echo "</td><td>";
     echo "<a style='margin:10px; margin-top: 20px; font-size: 13pt;' "; 
     echo " href='http://dictionary.reference.com/browse/{$word}' target='_blank'>";
     echo "{$word}";
     echo "</a> ";
-    if (isset($sentences[$word]) && is_array($sentences[$word]) ) {
-      echo ": " . array_pop($sentences[$word]);
+    echo "</td><td>";
+    if (isset($sentences[$word]) && is_array($sentences[$word])) {
+      printSentences($sentences[$word], $word);
     }
-    echo "<br />\n";
+    echo "</td><td>";
+    addToIgnoredLink($word);
+    echo "</td>";
+    echo "</tr>\n";
   }
+  echo "<table>";
 }
 drawEnd();
 
+function printSentences($sentences, $word)
+{
+  foreach($sentences as $key => $sentence) {
+    $sentences[$key] = str_replace($word, '<strong>'.$word.'</strong>', $sentence);
+  }
+  $maxsentences = 3;
+  $i = 0;
+  while(count($sentences) > 0 && $i < $maxsentences) {
+   $i++;
+   echo "&bull; " . array_pop($sentences) . "<br />"; 
+  }
+}
 function addToIgnoredLink($word)
 {
   $word = htmlspecialchars($word, ENT_QUOTES);
   echo <<<EOT
- <button onclick='addToIgnore("{$word}", "ignoredpool");'>IGNORE</button>;
+ <button onclick='addToIgnore("{$word}", "ignoredpool");'>IGNORE</button>
 EOT;
 
 }
