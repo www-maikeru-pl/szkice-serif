@@ -1,0 +1,3 @@
+function addToIgnore(word, poolId) {
+  $(poolId).innerHTML = $(poolId).innerHTML + ', ' + word; 
+}
