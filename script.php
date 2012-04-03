@@ -8,6 +8,7 @@ $lines = preg_split("/[\n]+/", $txt);
 $txt = preg_replace("/[<>\d:!?\.,=\/]+/", " ", $txt);
 $txt = str_replace("--", " ", $txt);
 $sentences = Array();
+$ignored = getIgnored();
 foreach($lines as $line) {
   $lineTxt = preg_replace("/[<>\d:!?\.,=\/]+/", " ", $line);
   $lineTxt = str_replace("--", " ", $lineTxt);
@@ -31,7 +32,7 @@ $words = preg_split("/[\s]+/", $txt);
 $popularity = Array();
 foreach($words as $word) {
   $word = trim($word);
-  if (strlen($word) == 0) {
+  if (strlen($word) == 0 || in_array($word, $ignored)) {
     continue;
   }
   if (!isset($popularity[$word])) {
@@ -57,8 +58,9 @@ drawEnd();
 
 function addToIgnoredLink($word)
 {
+  $word = htmlspecialchars($word, ENT_QUOTES);
   echo <<<EOT
- <button onclick="addToIgnore('{$word}', 'ignoredpool');">IGNORE</button>;
+ <button onclick='addToIgnore("{$word}", "ignoredpool");'>IGNORE</button>;
 EOT;
 
 }
@@ -83,13 +85,17 @@ function drawEnd()
 EOT;
 }
 
+function getIgnored()
+{
+  $txt = file_get_contents('ignored.txt');
+  $txt = strip_tags($txt);
+  $ignored = preg_split("/[,]+/", $txt);
+  $ignored = array_map('trim', $ignored);
+  $ignored = array_unique($ignored);
+  return $ignored;
+}
 function drawTextarea()
 {
-$txt = file_get_contents('ignored.txt');
-$txt = strip_tags($txt);
-$ignored = preg_split("/[,]+/", $txt);
-$ignored = array_map('trim', $ignored);
-$ignored = array_unique($ignored);
-$ignoredString = implode(", ", $ignored);
-echo "<h3>Ignored:</h3><textarea id='ignoredpool'>{$ignoredString}</textarea><hr />";
+$ignoredString = implode(", ", getIgnored());
+echo "<h3>Ignored:</h3><textarea rows='10' cols='150' id='ignoredpool'>{$ignoredString}</textarea><hr />";
 }
