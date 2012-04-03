@@ -1,4 +1,5 @@
 <?php
+$translator = new Translator();
 drawBegin();
 drawTextarea();
 
@@ -65,27 +66,47 @@ foreach($popularity as $count => $wordsOfThisCount) {
   echo "<table border=1>";
   foreach($wordsOfThisCount as $word) {
     echo "<td>";
-    addToIgnoredLink($word);
+    echo "<a style='margin:10px; margin-top: 20px; font-size: 13pt;' "; 
+    echo " href='http://www2.getionary.pl/szukaj.html?q={$word}' target='_blank'>";
+    echo "PL1";
+    echo "</a> ";
+    echo "<a style='margin:10px; margin-top: 20px; font-size: 13pt;' "; 
+    echo " href='http://www.diki.pl/slownik-angielskiego/?q={$word}' target='_blank'>";
+    echo "PL2";
+    echo "</a> ";
     echo "</td><td>";
     echo "<a style='margin:10px; margin-top: 20px; font-size: 13pt;' "; 
     echo " href='http://dictionary.reference.com/browse/{$word}' target='_blank'>";
     echo "{$word}";
     echo "</a> ";
     echo "</td><td>";
-    if (isset($sentences[$word]) && is_array($sentences[$word])) {
-      printSentences($sentences[$word], $word);
-    }
+    printSentences($sentences, $word);
     echo "</td><td>";
     addToIgnoredLink($word);
+    echo "</td><td>";
+    printTrans($translator, $word);
     echo "</td>";
     echo "</tr>\n";
   }
   echo "<table>";
 }
+printWords($popularity, $sentences);
 drawEnd();
 
-function printSentences($sentences, $word)
+function printTrans($translator, $word)
 {
+  $trans = $translator->get($word);
+  //echo var_export(array($word,$trans), true);
+  echo "<td>{$trans['fon']}</td><td>{$trans['trans']}</td>";
+}
+
+function printSentences($allSentences, $word, $print = true)
+{
+  if (!isset($allSentences[$word]) || !is_array($allSentences[$word])) {
+      return;
+  }
+  $sentences = $allSentences[$word];
+  $returnedSentences = Array();
   foreach($sentences as $key => $sentence) {
     $sentences[$key] = str_replace($word, '<strong>'.$word.'</strong>', $sentence);
   }
@@ -93,8 +114,13 @@ function printSentences($sentences, $word)
   $i = 0;
   while(count($sentences) > 0 && $i < $maxsentences) {
    $i++;
-   echo "&bull; " . array_pop($sentences) . "<br />"; 
+   if ($print) {
+    echo "&bull; " . array_pop($sentences) . "<br />";
+   } else {
+     $returnedSentences[] = array_pop($sentences);
+   }
   }
+  return $returnedSentences;
 }
 function addToIgnoredLink($word)
 {
@@ -138,4 +164,62 @@ function drawTextarea()
 {
 $ignoredString = implode(", ", getIgnored());
 echo "<h3>Ignored:</h3><textarea rows='10' cols='150' id='ignoredpool'>{$ignoredString}</textarea><hr />";
+}
+
+function printLinks($word)
+{
+  $links = '';
+  $links .= "<a style='margin:10px; margin-top: 20px; font-size: 13pt;' "; 
+  $links .= " href='http://www2.getionary.pl/szukaj.html?q={$word}' target='_blank'>";
+  $links .= "PL1";
+  $links .= "</a> ";
+  $links .= "<a style='margin:10px; margin-top: 20px; font-size: 13pt;' "; 
+  $links .= " href='http://www.diki.pl/slownik-angielskiego/?q={$word}' target='_blank'>";
+  $links .= "PL2";
+  return $links;
+}
+
+function printWords($popularity, $sentences)
+{
+  foreach($popularity as $count => $words) {
+    foreach($words as $word) {
+      $links = printLinks($word);
+      $sent = implode("; ", printSentences($sentences, $word, false));
+      echo <<<EOT
+<tr><td>0</td><td>{$word}</td><td>{$sent}</td><td>{$links}</td><td></td><td>0</td><td>0</td><td>0</td></tr>
+EOT;
+    }
+  }
+}
+
+
+
+class Translator
+{
+  private $words = Array();
+  public function __construct()
+  {
+    $file = file(__DIR__ . '/trans.txt');
+    foreach($file as $line) {
+      $segm = explode("\t", $line);
+      if (count($segm) == 3) {
+        $this->words[strtolower(trim($segm[0]))] = Array(
+            'fon' => $segm[1],
+            'trans' => $segm[2],
+        );
+      }
+    }
+    var_dump($this->words);
+  }
+  public function get($word)
+  {
+    $word = strtolower(trim($word));
+    if (isset($this->words[$word])) {
+      return $this->words[$word];
+    }
+    return Array(
+        'fon' => '',
+        'trans' => '',
+    );
+  }
 }
