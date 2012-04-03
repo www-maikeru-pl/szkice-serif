@@ -29,30 +29,50 @@ foreach($sentences as $key => $value) {
 $words = preg_split("/[\s]+/", $txt);
 //var_dump($words);
 
-$popularity = Array();
-foreach($words as $word) {
-  $word = trim($word);
-  if (strlen($word) == 0 || in_array($word, $ignored)) {
-    continue;
+function sortByPopularity($words, $ignored)
+{
+  $popularity = Array();
+  foreach($words as $word) {
+    $word = trim($word);
+    if (strlen($word) == 0 || in_array($word, $ignored) || !preg_match('/[a-zA-Z]+/', $word)) {
+      continue;
+    }
+    if (!isset($popularity[$word])) {
+      $popularity[$word] = 0;
+    }
+    $popularity[$word]++;
   }
-  if (!isset($popularity[$word])) {
-    $popularity[$word] = 0;
+  $pop = Array();
+  foreach($popularity as $word => $count) {
+    if (!isset($pop[$count])) {
+      $pop[$count] = array();
+    }
+    $pop[$count][] = $word;
   }
-  $popularity[$word]++;
+  krsort($pop);
+  foreach ($pop as $count => $arrOfWords) {
+    sort($pop[$count]);
+  }
+  return $pop;
+  natsort($popularity);
+  $popularity = array_reverse($popularity);
+  return $popularity;
 }
-natsort($popularity);
-$popularity = array_reverse($popularity);
+$popularity = sortByPopularity($words, $ignored);
 echo "<body style='line-height:200%;'>";
-foreach($popularity as $word => $count) {
-  addToIgnoredLink($word);
-  echo "<a style='margin:10px; margin-top: 20px; font-size: 13pt;' "; 
-  echo " href='http://dictionary.reference.com/browse/{$word}' target='_blank'>";
-  echo "{$word}";
-  echo "</a> ";
-  if (isset($sentences[$word]) && is_array($sentences[$word]) ) {
-    echo ": " . array_pop($sentences[$word]);
+foreach($popularity as $count => $wordsOfThisCount) {
+  echo "<h3> $count occurrence(s)</h3>";
+  foreach($wordsOfThisCount as $word) {
+    addToIgnoredLink($word);
+    echo "<a style='margin:10px; margin-top: 20px; font-size: 13pt;' "; 
+    echo " href='http://dictionary.reference.com/browse/{$word}' target='_blank'>";
+    echo "{$word}";
+    echo "</a> ";
+    if (isset($sentences[$word]) && is_array($sentences[$word]) ) {
+      echo ": " . array_pop($sentences[$word]);
+    }
+    echo "<br />\n";
   }
-  echo "<br />\n";
 }
 drawEnd();
 
