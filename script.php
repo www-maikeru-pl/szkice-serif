@@ -1,4 +1,5 @@
 <?php
+require_once 'translator.php';
 $translator = new Translator();
 drawBegin();
 drawTextarea();
@@ -60,44 +61,34 @@ function sortByPopularity($words, $ignored)
   return $popularity;
 }
 $popularity = sortByPopularity($words, $ignored);
+$identifier = 0;
 echo "<body style='line-height:200%;'>";
 foreach($popularity as $count => $wordsOfThisCount) {
   echo "<h3> $count occurrence(s)</h3>";
   echo "<table border=1>";
   foreach($wordsOfThisCount as $word) {
+    $identifier++;
     echo "<td>";
-    echo "<a style='margin:10px; margin-top: 20px; font-size: 13pt;' "; 
-    echo " href='http://www2.getionary.pl/szukaj.html?q={$word}' target='_blank'>";
-    echo "PL1";
-    echo "</a> ";
-    echo "<a style='margin:10px; margin-top: 20px; font-size: 13pt;' "; 
-    echo " href='http://www.diki.pl/slownik-angielskiego/?q={$word}' target='_blank'>";
-    echo "PL2";
-    echo "</a> ";
-    echo "</td><td>";
-    echo "<a style='margin:10px; margin-top: 20px; font-size: 13pt;' "; 
-    echo " href='http://dictionary.reference.com/browse/{$word}' target='_blank'>";
-    echo "{$word}";
-    echo "</a> ";
-    echo "</td><td>";
-    printSentences($sentences, $word);
-    echo "</td><td>";
     addToIgnoredLink($word);
     echo "</td><td>";
-    printTrans($translator, $word);
+    printSentences($sentences, $word);
     echo "</td>";
+    printTrans($identifier, $translator, $word);
+    echo "</td><td>";
+    echo returnLinks($word);
     echo "</tr>\n";
   }
   echo "<table>";
 }
-printWords($popularity, $sentences);
+//printWords($popularity, $sentences);
 drawEnd();
 
-function printTrans($translator, $word)
+function printTrans($identifier, $translator, $word)
 {
   $trans = $translator->get($word);
-  //echo var_export(array($word,$trans), true);
-  echo "<td>{$trans['fon']}</td><td>{$trans['trans']}</td>";
+  $phon = $trans['phons'];
+  $pl = transField($identifier, $word, $trans['pls']);
+  echo "<td>{$phon}</td><td><strong>{$word}</strong></td><td>{$pl}</td>";
 }
 
 function printSentences($allSentences, $word, $print = true)
@@ -166,7 +157,7 @@ $ignoredString = implode(", ", getIgnored());
 echo "<h3>Ignored:</h3><textarea rows='10' cols='150' id='ignoredpool'>{$ignoredString}</textarea><hr />";
 }
 
-function printLinks($word)
+function returnLinks($word)
 {
   $links = '';
   $links .= "<a style='margin:10px; margin-top: 20px; font-size: 13pt;' "; 
@@ -183,7 +174,7 @@ function printWords($popularity, $sentences)
 {
   foreach($popularity as $count => $words) {
     foreach($words as $word) {
-      $links = printLinks($word);
+      $links = returnLinks($word);
       $sent = implode("; ", printSentences($sentences, $word, false));
       echo <<<EOT
 <tr><td>0</td><td>{$word}</td><td>{$sent}</td><td>{$links}</td><td></td><td>0</td><td>0</td><td>0</td></tr>
@@ -192,34 +183,11 @@ EOT;
   }
 }
 
-
-
-class Translator
+function transField($fieldId, $en, $pl)
 {
-  private $words = Array();
-  public function __construct()
-  {
-    $file = file(__DIR__ . '/trans.txt');
-    foreach($file as $line) {
-      $segm = explode("\t", $line);
-      if (count($segm) == 3) {
-        $this->words[strtolower(trim($segm[0]))] = Array(
-            'fon' => $segm[1],
-            'trans' => $segm[2],
-        );
-      }
-    }
-    var_dump($this->words);
-  }
-  public function get($word)
-  {
-    $word = strtolower(trim($word));
-    if (isset($this->words[$word])) {
-      return $this->words[$word];
-    }
-    return Array(
-        'fon' => '',
-        'trans' => '',
-    );
-  }
+  $pl = htmlspecialchars($pl);
+  return <<<EOT
+  <textarea rows="4" cols="50" id="trans-{$fieldId}"/>{$pl}</textarea>
+  <button onclick="updateTrans('{$en}', 'trans-{$fieldId}');">update translation</button>
+EOT;
 }
