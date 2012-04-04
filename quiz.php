@@ -2973,7 +2973,9 @@ body {
 	/*font-family: "MS Gothic", monospace;
 	font-family: "MS Mincho", monospace;*/
 }
-
+.ipa {
+  font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+}
 	
 	-->
 	</style> 
@@ -3000,7 +3002,7 @@ body {
 	</div>
 	<div class="linijka">
 		
-			<span style="visibility: hidden;" id="odp1" class="japanese">やくそく</span>
+			<span style="visibility: hidden;" id="odp1" class="ipa">やくそく</span>
 		
 	</div>
 	<div class="linijka">

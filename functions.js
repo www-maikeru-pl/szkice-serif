@@ -4,8 +4,8 @@ function addToIgnore(word, poolId) {
 }
 
 function updateTrans(en, plNode) {
-  en = encodeURI(en);
-  pl = encodeURI($('#' + plNode).val());
+  en = encodeURIComponent(en);
+  pl = encodeURIComponent($('#' + plNode).val());
   var url = 'trans.php?action=add&en=' + en + '&pl=' + pl;
     $.get(url, function(data) {
       $('#' + plNode).val(data);

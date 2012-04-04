@@ -22,15 +22,8 @@ class Wordlist
     $this->translator = $translator;
     $this->merge();
   }
-  public function getList($wordAsKey = false)
+  public function getList()
   {
-    if ($wordAsKey) {
-      $wordArray = Array();
-      foreach($this->wordlist as $values) {
-        $wordArray[$values['en']] = $values;
-      }
-      return $wordArray;
-    }
     return $this->wordlist;
   }
   private function merge()
@@ -45,6 +38,7 @@ class Wordlist
         continue;
       }
       $trans = $this->translator->get($word);
+      $trans['en'] = $word; // to prevent force lovercase
       $trans['sent'] = implode(' ', $this->printSentences($word));
       $this->wordlist[] = $trans;
     }

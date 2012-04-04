@@ -157,18 +157,18 @@ function getIgnored()
 function drawTextarea()
 {
 $ignoredString = implode(", ", getIgnored());
-echo "<h3>Ignored:</h3><div style=\"font-size:3px;\" rows='10' cols='150' id='ignoredpool'>{$ignoredString}</div><hr />";
+echo "<h3>Ignored:</h3><textarea style=\"font-size:3px;\" rows='10' cols='150' id='ignoredpool'>{$ignoredString}</textarea><hr />";
 }
 
 function returnLinks($word)
 {
   $links = '';
   $links .= "<a style='margin:10px; margin-top: 20px; font-size: 13pt;' "; 
-  $links .= " href='http://www2.getionary.pl/szukaj.html?q={$word}' target='_blank'>";
+  $links .= " href='http://www2.getionary.pl/szukaj.html?q={$word['en']}' target='_blank'>";
   $links .= "PL1";
   $links .= "</a> ";
   $links .= "<a style='margin:10px; margin-top: 20px; font-size: 13pt;' "; 
-  $links .= " href='http://www.diki.pl/slownik-angielskiego/?q={$word}' target='_blank'>";
+  $links .= " href='http://www.diki.pl/slownik-angielskiego/?q={$word['en']}' target='_blank'>";
   $links .= "PL2";
   return $links;
 }
