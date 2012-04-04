@@ -20,6 +20,7 @@ class Translator
       $pls[] = $res['pl'];
     }
     $allWords = Array(
+        'en' => $en,
         'phons' => implode(' / ' , $phons), 
         'pls' => implode(' ', $pls));
     return $allWords;
