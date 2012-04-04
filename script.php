@@ -1,5 +1,6 @@
 <?php
 require_once 'translator.php';
+require_once 'wordlist.php';
 $translator = new Translator();
 drawBegin();
 drawTextarea();
@@ -7,7 +8,7 @@ drawTextarea();
 $txt = file_get_contents('sub.txt');
 $txt = strip_tags($txt);
 $lines = preg_split("/[\n]+/", $txt);
-$txt = preg_replace("/[<>\d:!?\.,=\/]+/", " ", $txt);
+$txt = preg_replace("/[<>\d:!?\.,=\/\";]+/", " ", $txt);
 $txt = str_replace("--", " ", $txt);
 $sentences = Array();
 $ignored = getIgnored();
@@ -61,35 +62,37 @@ function sortByPopularity($words, $ignored)
   return $popularity;
 }
 $popularity = sortByPopularity($words, $ignored);
-$identifier = 0;
-echo "<body style='line-height:200%;'>";
-foreach($popularity as $count => $wordsOfThisCount) {
-  echo "<h3> $count occurrence(s)</h3>";
+
+$allWords = Array();
+foreach($popularity as $words) {
+  foreach($words as $word) {
+    $allWords[] = $word;
+  }
+}
+$wordList = new WordList($allWords, $sentences, $translator);
+$list = $wordList->getList();
+printAllList($list);
+
+function printAllList($list) {
+  $identifier = 0;
   echo "<table border=1>";
-  foreach($wordsOfThisCount as $word) {
+  foreach($list as $word) {
     $identifier++;
     echo "<td>";
-    addToIgnoredLink($word);
+    addToIgnoredLink($word['en']);
     echo "</td><td>";
-    printSentences($sentences, $word);
+    echo $word['sent'];
     echo "</td>";
-    printTrans($identifier, $translator, $word);
+    $phon = $word['phons'];
+    $pl = transField($identifier, $word['en'], $word['pls']);
+    echo "<td>{$phon}</td><td><strong>{$word['en']}</strong></td><td>{$pl}</td>";
     echo "</td><td>";
     echo returnLinks($word);
     echo "</tr>\n";
   }
   echo "<table>";
 }
-//printWords($popularity, $sentences);
 drawEnd();
-
-function printTrans($identifier, $translator, $word)
-{
-  $trans = $translator->get($word);
-  $phon = $trans['phons'];
-  $pl = transField($identifier, $word, $trans['pls']);
-  echo "<td>{$phon}</td><td><strong>{$word}</strong></td><td>{$pl}</td>";
-}
 
 function printSentences($allSentences, $word, $print = true)
 {
@@ -154,7 +157,7 @@ function getIgnored()
 function drawTextarea()
 {
 $ignoredString = implode(", ", getIgnored());
-echo "<h3>Ignored:</h3><textarea rows='10' cols='150' id='ignoredpool'>{$ignoredString}</textarea><hr />";
+echo "<h3>Ignored:</h3><div style=\"font-size:3px;\" rows='10' cols='150' id='ignoredpool'>{$ignoredString}</div><hr />";
 }
 
 function returnLinks($word)

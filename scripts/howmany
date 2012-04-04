@@ -1,0 +1,7 @@
+#!/bin/sh
+tail -n 100000 ci.txt > 1.txt
+sed 's/[0-9]\+[\t]//g' < 1.txt > out
+cat out | aspell list -l en  > top100kMisspeledAspell.txt
+grep -v -x -f top100kMisspeledAspell.txt out > top100kCorrectAspell.txt
+#cat out | aspell pipe -l en --encoding utf-8 | egrep '^[&#]' | wc -l
+#cat out | aspell pipe -l en --encoding utf-8 | egrep '^[&#]' | head
