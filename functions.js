@@ -11,3 +11,10 @@ function updateTrans(en, plNode) {
       $('#' + plNode).val(data);
     });
 }
+
+function getDef(word, plNode) {
+  var url = 'trans.php?action=def&word=' + word;
+    $.get(url, function(data) {
+      $('#' + plNode).val(data);
+    });
+}

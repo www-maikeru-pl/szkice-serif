@@ -1,4 +1,5 @@
 <?php
+require_once 'dom.php';
 require_once 'translator.php';
 require_once 'wordlist.php';
 $translator = new Translator();
@@ -191,6 +192,7 @@ function transField($fieldId, $en, $pl)
   $pl = htmlspecialchars($pl);
   return <<<EOT
   <textarea rows="4" cols="50" id="trans-{$fieldId}"/>{$pl}</textarea>
+  <button onclick="getDef('{$en}', 'trans-{$fieldId}');">get definition</button>
   <button onclick="updateTrans('{$en}', 'trans-{$fieldId}');">update translation</button>
 EOT;
 }

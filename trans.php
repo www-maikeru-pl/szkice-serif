@@ -26,3 +26,10 @@ if ('add' === $action) {
   echo $translator->updatePl($en, $cleanPl);
   return;
 }
+if ('def' === $action) {
+  if (!isset($_GET['word'])) {
+    throw new InvalidArgumentException;
+  }
+  require_once 'dom.php';
+  echo getDef($_GET['word']);
+}
