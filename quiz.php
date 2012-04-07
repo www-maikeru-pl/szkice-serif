@@ -3058,7 +3058,7 @@ body {
           foreach($wordList->getList() as $entry) {
             $entry['pls'] = trim($entry['pls']);
             if (strlen($entry['pls']) == 0) {continue;}
-            $entry['pls'] = preg_replace("[\n]", "<br/>", $entry['pls']);
+            $entry['pls'] = preg_replace("[\n]", "; ", $entry['pls']);
             $sent = "<span style='font-size:small;'>{$entry['sent']}</span>";
             $links = returnLinks($entry['en']);
             echo <<<EOT

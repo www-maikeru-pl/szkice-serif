@@ -13,6 +13,7 @@ if ('add' === $action) {
   }
   $en = urldecode($_GET['en']);
   $pl = urldecode($_GET['pl']);
+  $phon = urldecode($_GET['phon']);
   $cleanPlArr = array();
   foreach(explode("\n", $pl) as $line) {
     $line = str_replace('Dodaj do powtórek w eTutor', '', $line);
@@ -23,7 +24,7 @@ if ('add' === $action) {
     }
   }
   $cleanPl = implode("\n", $cleanPlArr);
-  echo $translator->updatePl($en, $cleanPl);
+  echo $translator->updatePl($en, $cleanPl, $phon);
   return;
 }
 if ('def' === $action) {
@@ -32,4 +33,11 @@ if ('def' === $action) {
   }
   require_once 'dom.php';
   echo getDef($_GET['word']);
+}
+if ('phon' === $action) {
+  if (!isset($_GET['word'])) {
+    throw new InvalidArgumentException;
+  }
+  require_once 'dom.php';
+  echo getPhon($_GET['word']);
 }

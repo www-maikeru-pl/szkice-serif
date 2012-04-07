@@ -1,0 +1,752 @@
+{208}{304}Game of Thrones 2x01-The North Remembers(Air Date on April 1, 2012)
+{304}{400}synchro, korekta by elderman
+{3176}{3234}Well struck.
+{3234}{3277}Well struck, Dog.
+{3368}{3414}Did you like that?
+{3416}{3459}It was well struck,|Your Grace.
+{3462}{3517}I already said|it was well struck.
+{3546}{3598}Yes, Your Grace.
+{3776}{3829}- Who's next?| - Lothor Brune,
+{3829}{3912}free rider in the service|of Lord Baelish.
+{3912}{3994}Ser Dontos the Red|of House Hollard.
+{4059}{4126}Ser Dontos the Red|of House Hollard!
+{4128}{4164} Here I am.
+{4164}{4231}Here I am.
+{4361}{4423}Sorry, Your Grace.
+{4423}{4466}My deepest apologies.
+{4466}{4509} - Are you drunk? |- No.
+{4509}{4574}Uh, no.|No, Your Grace.
+{4577}{4641}- I had two cups of wine.|- Two cups?
+{4644}{4694}That's not much at all.
+{4696}{4754}Please,|have another cup.
+{4756}{4788}Are you sure, Your Grace?
+{4790}{4845} Yes. To celebrate | my name day.
+{4845}{4910}Have two.|Have as much as you like.
+{4910}{4982}I would be honored,|Your Grace.
+{5015}{5090}Ser Meryn, help Ser Dontos|celebrate my name day.
+{5090}{5145}See that he drinks|his fill.
+{5564}{5639}You can't.
+{5639}{5682}What did you say?
+{5708}{5754}Did you say I can't?
+{5754}{5819}I only meant|it would be bad luck
+{5819}{5862}to kill a man|on your name day.
+{5862}{5917}What kind of stupid|peasant's superstition...
+{5917}{5962} The girl is right.
+{5962}{6006} What a man sows | on his name day
+{6006}{6042}he reaps all year.
+{6104}{6166}Take him away.
+{6166}{6221}I'll have him killed|tomorrow, the fool.
+{6291}{6329}He is.
+{6329}{6370}A fool--|you're so clever to see it.
+{6370}{6451}He'll make a much better fool|than a knight.
+{6454}{6533}He doesn't deserve|the mercy of a quick death.
+{6564}{6634}Did you hear My Lady,|Ser Dontos?
+{6634}{6710}From this day,|you'll be my new fool.
+{6710}{6763}Thank you, Your Grace.
+{6763}{6842}And you, My Lady,|thank you.
+{6842}{6914} Beloved nephew.
+{7063}{7128}We looked for you|on the battlefield.
+{7173}{7255}You were nowhere|to be found.
+{7255}{7319}I've been here,|ruling the kingdoms.
+{7322}{7403}What a fine job|you've done.
+{7403}{7442}Look at you.
+{7473}{7526}More beautiful|than ever.
+{7526}{7626}And you! You-- you're going to be|bigger than the hound,
+{7626}{7686}but much better looking.
+{7686}{7732}This one doesn't like me.
+{7734}{7777}Can't imagine why.
+{7777}{7842}- We heard you were dead.|- I'm glad you're not dead.
+{7842}{7888}Me, too, dear.
+{7888}{7943}Death is so boring,|especially now
+{7943}{8015}with so much excitement|in the world.
+{8017}{8070}My Lady, I'm sorry|for your loss.
+{8103}{8144}Her loss?
+{8144}{8190}Her father was|a confessed traitor.
+{8190}{8228}But still her father.
+{8231}{8278}Surely having so recently|lost your own beloved father
+{8278}{8324}you can sympathize.
+{8415}{8468}My father was a traitor.
+{8468}{8513}My mother and brother|are traitors, too.
+{8513}{8590}I am loyal|to my beloved Joffrey.
+{8619}{8676}Of course you are.
+{8715}{8808}Well, enjoy your name day,|Your Grace.
+{8808}{8854}Wish I could stay|and celebrate,
+{8856}{8921}but there is work|to be done.
+{8923}{8971}What work?
+{8971}{9022}Why are you here?
+{9091}{9170}The raven arrived|from the Citadel
+{9170}{9245}- this morning, Your Grace.
+{9247}{9314}The conclave has met,|considered reports
+{9317}{9367}from Maesters all over|the Seven Kingdoms,
+{9367}{9451} and declared | this great summer
+{9451}{9518}done at last.
+{9518}{9585}The longest summer|in living memory.
+{9588}{9633}The peasants say,|a long summer means
+{9636}{9705}-  an even longer winter. | - A common superstition.
+{9705}{9777} We have enough wheat | for a five-year winter.
+{9779}{9832}If it lasts any longer,
+{9835}{9897}we'll have|fewer peasants.
+{9899}{9969}The city's drowning in refugees,|Your Grace, fleeing the war.
+{9971}{10005}We have nowhere|to house them.
+{10007}{10058}And with winter coming,|it'll only get worse.
+{10058}{10129}You command the City Watch,|do you not, Lord Slynt?
+{10165}{10209} I do, Your Grace.
+{10211}{10259}And are you not|a Lord at my command?
+{10259}{10343}I owe my title and lands|to your generosity, Your Grace.
+{10343}{10408}Then do your job.|Shut the gates to the peasants.
+{10408}{10477}They belong in the field,|not our capital.
+{10480}{10561}Yes, Your Grace.
+{10674}{10712}Don't get up.
+{10741}{10832}More ravishing than ever,|big sister.
+{10856}{10923}War agrees with you.
+{10923}{10993}Forgive the interruption.|Carry on.
+{11021}{11055}What are you doing here?
+{11057}{11146}Ah, it's been|a remarkable journey.
+{11146}{11235}I pissed off the edge|of the Wall,
+{11235}{11304} I slept in a sky cell,
+{11304}{11359}I fought with|the hill tribes--
+{11359}{11424}so many adventures,
+{11427}{11491}so much to be|thankful for.
+{11491}{11570}What are you doing here?|This is the small council.
+{11587}{11626}Yes. well I, do believe,|the Hand of the King,
+{11652}{11697}is welcome at all|small council meetings.
+{11697}{11745}Our father|is Hand of the King.
+{11748}{11820}Yes, but in his absence...
+{11992}{12045} Your father has named | Lord Tyrion
+{12045}{12112}to serve as Hand|in his stead while he fights.
+{12112}{12177}Out! All of you out!
+{12290}{12354}I would like to know|how you tricked father into this.
+{12354}{12402}If I were capable|of tricking father,
+{12402}{12441}I'd be emperor|of the world by now.
+{12441}{12503}You brought this|on yourself.
+{12505}{12539}I've done nothing.
+{12541}{12585}Quite right--|you did nothing
+{12587}{12642}when your son called|for Ned Stark's head.
+{12645}{12690}Now the entire North|has risen up against us.
+{12693}{12750}- I tried to stop it.|- Did you? You failed.
+{12752}{12827}That bit of theater will haunt|our family for a generation.
+{12827}{12923}- Robb Stark is a child.|- Who's won every battle he's fought.
+{12925}{12978}Do you understand|we're losing the war?
+{12978}{13055}- What do you know about warfare?|- Nothing.
+{13057}{13100}But I know people.
+{13100}{13150}And I know that our enemies hate|each other
+{13150}{13220}almost as much|as they hate us.
+{13323}{13385}- Joffrey is King.|- Joffrey is King.
+{13388}{13448}You are here|to advise him.
+{13448}{13489}I'm only here|to advise him.
+{13489}{13551}And if the King listens|to what I say,
+{13551}{13637}the King might just get|his Uncle Jaime back.
+{13678}{13714}How?
+{13716}{13752}You love your children.
+{13755}{13791}It's your one|redeeming quality.
+{13791}{13860}That and your cheekbones.
+{13863}{13930}The Starks love|their children as well.
+{13932}{13994}- And we have two of them.|- One.
+{14033}{14102}- One?|- Arya, little animal-- she disappeared.
+{14105}{14177}Disappeared?|What, in a puff of smoke?
+{14217}{14299}We had three Starks|to trade.
+{14299}{14364}You chopped one's head off|and let another escape.
+{14385}{14436}Father will be furious.
+{14462}{14500}It must be odd for you...
+{14560}{14615}to be the disappointing child.
+{14795}{14889} My Lord, may the Old Gods | watch over your brother
+{14889}{14953} and all our northern sons.
+{14953}{15049} The walls of my Holdfast | will not stand the winter.
+{15049}{15143}The stones were last mortared|in the time of King Aerys,
+{15143}{15200}and I'm afraid|the masons today
+{15200}{15289}are not fit to carry|their fathers' hammers.
+{15292}{15349}When I was a boy,|I remember seeing them
+{15349}{15459} put up a new tower | at Torrhen's Square in a summer.
+{15459}{15510} Men worked back then.
+{15512}{15582}Today, my Holdfast|looks like it was built
+{15582}{15634}by drunk children.
+{15637}{15735}At night you can hear the wind|howling through the gaps.
+{15735}{15783} And the Gods | forbid it rains.
+{15783}{15862}Why, I might as well sleep|beneath a waterfall.
+{15862}{15901} Maintenance of a Holdfast
+{15903}{15984}generally falls|to the lord of that Holdfast.
+{15984}{16020}Generally, yes,
+{16020}{16061}but I've sent|all the young men off
+{16061}{16107}to fight|Robb Stark's war.
+{16107}{16181}King Robb.|And it's not his war.
+{16183}{16229}He didn't choose it.
+{16229}{16265}Maybe not, My Lord,
+{16265}{16315}but he called in his Banners|and took the men.
+{16315}{16358} Joffrey killed my father,
+{16358}{16416}your liege lord.
+{16418}{16476}Do you remember|your vows, Ser?
+{16478}{16522}Of course I remember!
+{16524}{16596}We can spare four masons|for a week, My Lord.
+{16598}{16670}Will that be sufficient|to repair your walls?
+{16670}{16725}I-- I believe it will.
+{16869}{16924}We didn't want him here|all day, did we?
+{16955}{17027}I didn't like the way|he was talking about Robb.
+{17030}{17073}Nor did I.
+{17128}{17195}But listening to people|you'd rather not listen to
+{17198}{17294}is one of your responsibilities|as Lord of Winterfell.
+{17363}{17418} Lord Portan.
+{17418}{17493} My Lord, may the Old Gods | watch over your brother
+{17493}{17533} and all our northern sons.
+{18708}{18814}Boil this for an hour|and drink the tea.
+{18816}{18876}Makes all your pain|go away.
+{18876}{18938}Don't have any pain.
+{18941}{18979}Lucky for you.
+{19003}{19049}That way.
+{19113}{19166}You've been having|those dreams again.
+{19168}{19212} I don't dream.
+{19212}{19250}Everyone dreams.
+{19250}{19320}I don't.
+{19322}{19370}Heard some of the men|talking about the comet.
+{19372}{19423} They say it's an omen.
+{19425}{19511}They say it means Robb will win|a great victory in the South.
+{19514}{19552}Did they?
+{19593}{19679}I heard some other fools|say it's Lannister Red.
+{19679}{19761}Means the Lannisters will rule|all Seven Kingdoms before long.
+{19761}{19842}Heard a stable boy say|it's the color of blood
+{19845}{19900}to mark the death|of your father.
+{19993}{20070}The stars|don't fall for men.
+{20070}{20132}The red comet means|one thing, boy--
+{20159}{20197}dragons.
+{20243}{20307}The dragons are all dead.
+{20310}{20367}They've been dead|for centuries.
+{21245}{21286}Mmm.
+{21288}{21358}Mmm. Mmm.
+{21408}{21470}What did your brother say|about them, Khaleesi?
+{21473}{21511}He said they ate meat.
+{21513}{21602}He didn't tell you|what kind of meat?
+{21602}{21672}My brother didn't know|anything about dragons.
+{21672}{21748}He didn't know anything|about anything.
+{21866}{21928}Eh.
+{22559}{22609}She was Drogo's|first gift to me.
+{22609}{22681}I remember.
+{22727}{22789}I promised|to protect them.
+{22789}{22846}Promised them their enemies|would die screaming.
+{22846}{22906}How do I make|starvation scream?
+{22906}{22978}A trick I never learned,|I'm afraid.
+{23024}{23072}Does it ever end?
+{23074}{23120}This is farther east|than I've ever been.
+{23122}{23158}But, yes, Khaleesi,
+{23158}{23194}everything ends,|even the red waste.
+{23194}{23256}And you're sure|there's no other way?
+{23256}{23324}If we go south to the land|of the Lazarheen,
+{23324}{23384}the Lamb Men will kill us|and take your dragons.
+{23384}{23429}If we go west|to the Dothraki Sea,
+{23431}{23479}the first|Khalasar we meet
+{23479}{23518}will kill us|and take your dragons.
+{23518}{23583}No one will take|my dragons.
+{23609}{23674}They are too weak to fight,
+{23676}{23724}as are your people.
+{23724}{23779}You must be|their strength.
+{23803}{23853}As you are mine.
+{24980}{25050}Rakharo...
+{25206}{25273}You never have.
+{25388}{25481}This is bad time to start.
+{26826}{26872}Having a rough time of it?
+{26874}{26910}Nothing's killed me yet.
+{26913}{26973}- Your ass killed the sledge.|- You offered me a ride.
+{26975}{27052}I just wanted you to shut up about|your damn blisters.
+{27388}{27455}I was born in a place|like this.
+{27457}{27531}Later, I fell|on hard times.
+{27570}{27613} Are those girls?
+{27613}{27656} Craster's daughters.
+{27658}{27747}I haven't seen a girl|in six months.
+{27747}{27795}I'd keep on not seeing them|if I were you.
+{27795}{27877}What, he don't like people messing|with his daughters?
+{27877}{27944}He don't like people|messing with his wives.
+{27977}{28030}He marries|his daughters,
+{28032}{28088} and they give him | more daughters.
+{28088}{28140}And on and on it goes.
+{28143}{28200}- That's foul.|- It's beyond foul.
+{28203}{28296}All the other wildlings for a|hundred leagues have disappeared.
+{28296}{28344}Craster's still here.
+{28344}{28407}He must be doing|something right.
+{28447}{28488}What happens|to the boys?
+{28488}{28560}- Hmm?|-  He marries his daughters.
+{28562}{28632}What does he do|with his sons?
+{28687}{28752}He said he planned|to stop here
+{28752}{28790}on his way|to the Frostfangs.
+{28790}{28829}People make|all sorts of plans.
+{28831}{28912}I haven't seen Benjen Stark|in three years.
+{28912}{28948}Haven't missed him.
+{28951}{29016}Always treated me|like scum.
+{29047}{29109}Haven't had any good wine|for a long time.
+{29109}{29181}You Southerners make good wine,|I'll give you that.
+{29183}{29231}We're not Southerners.
+{29231}{29274}Who's this little girl?
+{29308}{29375}You're prettier|than half my daughters.
+{29378}{29457}You got a nice wet twat|between your legs?
+{29457}{29500}What's your name?
+{29500}{29548}- Jon Snow.|- Snow, eh?
+{29548}{29617}Listen to me, bastard.
+{29617}{29713}All you lot from south of the Wall,|you're Southerners.
+{29713}{29807}But now you're in the North,|the real North.
+{29807}{29845}The lad meant no harm.
+{29881}{29960}I catch that pretty little bastard|talking to my daughters--
+{29960}{30058}No one will talk to your daughters,|you have my word.
+{30061}{30140}Now, sit down|and shut your mouth.
+{30205}{30260}You bring any of that|good wine with you?
+{30260}{30305}We did.
+{30305}{30365}We passed through|six villages on the way here.
+{30365}{30411}All six were abandoned.
+{30411}{30485}Where have all|the wildlings gone?
+{30485}{30572}I could tell you,|but I'm thirsty.
+{30572}{30622} There's a barrel of | Dornish wine on the sledge.
+{30622}{30689}-  Bring it in here. | - Yes, commander.
+{30689}{30766} You want to know | where they've all gone?
+{30766}{30869} North... to join up | with Mance Rayder...
+{30898}{30938}Your old friend.
+{30938}{31003}He's no friend of mine.
+{31003}{31077}He broke his vows,|betrayed his brothers.
+{31080}{31109}Oh, aye.
+{31111}{31183}But once he was|just a poor black crow.
+{31185}{31255}And now he's|King-Beyond-the-Wall.
+{31257}{31315}He's been calling|himself that for years.
+{31317}{31406}What's he king of?|A frozen lake somewhere?
+{31440}{31487}That's a good-looking axe.
+{31490}{31540} Fresh forged?
+{31588}{31648}Give it here.
+{31651}{31701}You'll have another one|made at Castle Black.
+{31703}{31749}Here.
+{31749}{31840}Oh, that's some|lovely steel.
+{31929}{32003}You want to know|what Mance Rayder is doing?
+{32005}{32049}Gathering an army.
+{32051}{32104} What I hear, | he's already got more men
+{32104}{32159} than any of your | southern kings.
+{32159}{32219}And where does he plan|marching this army?
+{32221}{32255}When you're|all the way north,
+{32257}{32298}there's only|one direction to go.
+{32351}{32461}These are bad times to be|living alone in the wild.
+{32463}{32542}The cold winds|are rising.
+{32542}{32626}Let them come.|My roots are sunk deep.
+{32662}{32710}Wife...
+{32710}{32809}tell the Lord Crow|how content we are.
+{32809}{32866}This is our place.
+{32866}{32912}Our husband keeps us safe.
+{32914}{32988}Better to live free|than die a slave.
+{33032}{33115} Don't it make you | jealous, old man,
+{33115}{33166}to see me with|all these young wives
+{33166}{33245}and you with no one|to warm your bed?
+{33245}{33293}We chose different paths.
+{33293}{33398}Oh, aye, and you chose the path|with no one but boys on it.
+{33444}{33518}You'll be wanting to sleep|beneath my roof, I suppose,
+{33521}{33569}and eat me out of pigs.
+{33571}{33617}A roof would be welcome.
+{33617}{33655}It's been hard riding.
+{33655}{33732}We've brought our own food|and good steel for you.
+{33794}{33859}Any man lays a hand|on one of my wives,
+{33861}{33931}he loses the hand.
+{33976}{34067}And I see this one|staring too long,
+{34067}{34144}I might just gouge|his eyes out.
+{34146}{34223}Your roof, your rules.
+{34535}{34590}Who am I?!
+{34592}{34674}- Who am I?!|- Lord commander.
+{34674}{34751}- And who are you?|- Jon Snow.
+{34751}{34813}Who  are  you?
+{34815}{34868}Your steward.
+{34871}{34921}You want to lead|one day?
+{34986}{35053}Then learn|how to follow.
+{35472}{35585} Lord of Light, come to us | in our darkness.
+{35587}{35676}We offer you|these false Gods.
+{35676}{35746}Take them and cast|your light upon us...
+{35786}{35885}For the night is dark|and full of terrors.
+{35885}{35969}For the night is dark|and full of terrors.
+{36017}{36062} After the long summer,
+{36065}{36136} darkness will fall heavy | on the world.
+{36136}{36201}The stars will bleed.
+{36204}{36259}We need to stop her.
+{36261}{36352} The cold breath of winter | will freeze the seas...
+{36352}{36386}Not now.
+{36386}{36415} ...And the dead shall rise | in the North.
+{36501}{36585}All you men were named|in the Light of the Seven!
+{36587}{36662} Is this how you treat | the Gods of your fathers?
+{36662}{36774}Are you so eager to spit|on your ancestors?
+{36980}{37040}You smell of fear--
+{37040}{37143}fear and piss|and old bones.
+{37172}{37213}Do you want to stop me?
+{37318}{37364}Stop me.
+{37671}{37714}In the ancient books,|it's written
+{37714}{37810}that a warrior will draw|a burning sword from the fire.
+{37839}{37911}And that sword shall be|Lightbringer.
+{38026}{38110}Stannis Baratheon,
+{38112}{38172}warrior of light,
+{38174}{38220}your sword awaits you.
+{38944}{39028}Lord, cast your|light upon us!
+{39064}{39145} For the night is dark | and full of terrors.
+{39213}{39297}For the night is dark|and full of terror.
+{39944}{40033}This woman will lead him|into a war he cannot win.
+{40033}{40073}Stannis is our king.
+{40073}{40105}We follow|where he leads,
+{40107}{40172}- even if we don't like the path.|- King.
+{40172}{40222}Since that boar|killed his brother,
+{40222}{40272}every lord wants|a coronation.
+{40272}{40323}I don't serve the others.|I serve Stannis.
+{40323}{40411}As do I,|but loyal service
+{40414}{40483}means telling|hard truths.
+{40483}{40582}He's surrounded|by fools and fanatics,
+{40582}{40649}but he trusts you, Davos.
+{40649}{40723}If you tell him|the truth...
+{40757}{40805}What's the truth?
+{41107}{41150} "And I declare upon | the honor of my house
+{41152}{41186} that my beloved | brother Robert--"
+{41186}{41248}he wasn't|my beloved brother.
+{41251}{41303}I didn't love him.|He didn't love me.
+{41303}{41346}A harmless courtesy,|Your Grace.
+{41349}{41380}A lie.|Take it out.
+{41452}{41498}"...that my brother Robert|left no trueborn heirs,
+{41498}{41555}the boy Joffrey,|the boy Tommen,
+{41555}{41608}and the girl Myrcella|being born of incest
+{41608}{41682} between Cersei Lannister and | her brother Jaime Lannister.
+{41682}{41752}-  By right of birth--" |- Jaime Lannister, the Kingslayer.
+{41752}{41819}Call him what he is.
+{41821}{41857} "...And her brother | Jaime Lannister,
+{41857}{41891} the Kingslayer.
+{41891}{41967} By right of birth and blood, | i do this day lay claim--"
+{41970}{42044} Make it  Ser  Jaime Lannister, | the Kingslayer.
+{42044}{42097}Whatever else he is,|the man's still a knight.
+{42099}{42147}"Ser Jaime Lannister,|the Kingslayer.
+{42147}{42205}By right of birth|and blood,
+{42205}{42286} I do this day lay claim | to the Iron Throne of Westeros.
+{42289}{42349}Let all true men|declare their loyalty."
+{42349}{42406}When Eddard Stark learned|the truth, he told only me.
+{42406}{42464}I'll not make|the same mistake.
+{42464}{42514}Send copies of that letter|to every corner of the Realm,
+{42514}{42560}from the Arbor|to the Wall.
+{42560}{42629}The time has come|to choose.
+{42629}{42689}Let no man claim ignorance|as an excuse.
+{42689}{42751}Your Grace,the Lannisters|are the true enemy.
+{42754}{42802}If, for the time being, you could|make peace with your brother--
+{42802}{42857}I'll not make peace with Renly|while he calls himself King.
+{42857}{42903}Well, many have already|declared for him--
+{42903}{42953}Mace Tyrell,|Randyll Tarly.
+{42955}{43032}Stannis does not need to beg|this lord or that lord for support.
+{43032}{43070} The Lord of Light | stands behind him.
+{43070}{43154}And how many ships has|the Lord of Light got in his fleet?
+{43157}{43217}- He has no need for ships.|- I'm sure he doesn't,
+{43219}{43253}but we do if we're|going to war.
+{43253}{43327}If not Renly, Your Grace,|join forces with Robb Stark.
+{43327}{43382}Who would steal|the northern half of my kingdom.
+{43382}{43413}I've always served thieves|according to their desserts,
+{43416}{43466} as you well know, | Ser Davos.
+{43466}{43538}Joffrey, Renly, Robb Stark,|they're all thieves.
+{43540}{43598}They'll bend the knee|or I'll destroy them.
+{43600}{43708}I owe you|an apology, my King.
+{43711}{43758}My duty is to serve.
+{43761}{43857} You have chosen the new God | over the Old Gods.
+{43859}{43943} May the Lord of Light | watch over us all.
+{43943}{44001}Shall we drink together?
+{44001}{44049}Don't.
+{44051}{44166}A cup of wine to honor|the one true God.
+{45271}{45348}The night is dark and full|of terrors, old man,
+{45348}{45425}but the fire|burns them all away.
+{45943}{45991}Your Grace.
+{46264}{46329}King in the North.
+{46374}{46417}I keep expecting you|to leave me
+{46417}{46468}in one castle or another|for safekeeping,
+{46468}{46564}but you drag me along|from camp to camp.
+{46566}{46628}Have you grown|fond of me, Stark?
+{46628}{46672}Is that it?
+{46674}{46722}I've never seen you|with a girl.
+{46748}{46806}If I left you with|one of my bannermen,
+{46806}{46880}your father would know|within a fortnight
+{46880}{46964}and my bannerman would receive|a raven with a message:
+{46964}{47050}"Release my son and you'll be rich|beyond your dreams.
+{47050}{47137}Refuse and your house|will be destroyed, root and stem."
+{47137}{47192}You don't trust|the loyalty
+{47192}{47247}of the men following|you into battle?
+{47249}{47333}Oh, I trust them|with my life,
+{47333}{47381}just not with yours.
+{47381}{47427}Smart boy.
+{47427}{47465}What's wrong?
+{47468}{47513} Don't like | being called "boy"?
+{47537}{47585}Insulted?
+{47753}{47820} You insult yourself, | Kingslayer.
+{47861}{47942} You've been defeated by a boy.
+{47945}{48002} You're held captive | by a boy.
+{48053}{48115} Perhaps you'll be | killed by a boy.
+{48278}{48319}Stannis Baratheon|sent ravens
+{48321}{48400}to all the high lords|of Westeros.
+{48403}{48489}King Joffrey Baratheon|is neither a true king
+{48491}{48554} nor a true Baratheon.
+{48554}{48606}He's your bastard son.
+{48606}{48669} If that's true, | Stannis is the rightful king.
+{48669}{48719}How convenient for him.
+{48719}{48822}My father learned|the truth.
+{48822}{48863}That's why|you had him executed.
+{48863}{48921}I was your prisoner|when Ned Stark lost his head.
+{48921}{48971}Your son killed him
+{48971}{49007}so the world wouldn't|learn who fathered him.
+{49007}{49103}And you-- you pushed|my brother from a window
+{49105}{49151}because he saw you|with the queen.
+{49275}{49350}You have proof?
+{49350}{49410}Or do you want to trade gossip|like a couple of fishwives?
+{49410}{49462}I'm sending one of your cousins|down to King's Landing
+{49462}{49503}with my peace terms.
+{49503}{49575}You think my father's going|to negotiate with you?
+{49578}{49635}You don't know him|very well.
+{49635}{49741}No, but he's starting|to know me.
+{49741}{49827} Three victories | don't make you a conqueror.
+{49863}{49925}It's better than|three defeats.
+{50608}{50671} This city stinks...
+{50728}{50764}Like dead bodies.
+{50767}{50817} A bit corpsey, yes.
+{50817}{50877}And shit.
+{50879}{50925}I thought you wanted|to come here.
+{51004}{51062}I love it.
+{51062}{51150}You love the smell|of dead bodies and shit?
+{51150}{51222}And cum and garlic|and rum.
+{51225}{51299}You can smell cum|from the balcony?
+{51299}{51381}I love the stink.|I love the noise.
+{51381}{51431}Cities make me|want to fuck.
+{51431}{51510}And so did the country.
+{51584}{51620}This is where I belong.
+{51623}{51692}Yes, well, you need|to be careful.
+{51692}{51731}No one can know|you're here.
+{51731}{51771}No one will know.
+{51771}{51810}You can't trust anyone|in King's Landing.
+{51810}{51886} They're all liars-- | good liars, bad liars,
+{51886}{51944}one or two great liars.
+{51946}{51994}What about you?
+{51994}{52057}Me? I'm not from here.|I'm a slave to the truth.
+{52059}{52126}Truth?
+{52169}{52244}You are the biggest|little liar I have ever met.
+{52246}{52294}Why do you think|I am so little?
+{52294}{52402}I'm being crushed beneath the|weight of all that truth.
+{52455}{52503}Oh!
+{52503}{52570}Ned Stark actually|slept on this.
+{52572}{52663}As if the poor man|didn't suffer enough.
+{52706}{52790}One of the many changes|we'll have to make around here.
+{53056}{53136}- Lord Baelish.|- Your Grace.
+{53138}{53198}I wonder if I might|ask you for a favor.
+{53200}{53236}Of course,|Your Grace.
+{53236}{53282}Ned Stark's youngest|daughter Arya--
+{53284}{53337}we can't seem|to locate her.
+{53337}{53397}If she's escaped|the capital,
+{53399}{53447}Winterfell seems|the logical destination.
+{53450}{53510}And yet my friends in the North|report no sign of her.
+{53510}{53558}Curious.
+{53558}{53608}If we choose to negotiate|with the Starks,
+{53610}{53663}the girl has some value.|Whoever finds her--
+{53665}{53725}well, you know what they say about|Lannisters and debts.
+{53725}{53773}Well, you could ask|Varys where she is.
+{53776}{53831}He'll have|an answer for you.
+{53831}{53869}Whether you believe it...
+{53869}{53963}Myself, I have always had|a hard time trusting eunuchs.
+{53963}{54025}Who knows what they want?
+{54028}{54102}A mockingbird.
+{54102}{54145}You created your|own Sigil, didn't you?
+{54145}{54174}Yes.
+{54188}{54243}Appropriate...|for a self-made man
+{54243}{54284}with so many|songs to sing.
+{54286}{54325}I'm glad you like it.
+{54325}{54370}Some people are|fortunate enough
+{54370}{54411}to be born into|the right family.
+{54411}{54476}Others have to find|their own way.
+{54507}{54557}I heard a song once
+{54557}{54620}about a boy|of modest means
+{54622}{54711}who found his way into the|home of a very prominent family.
+{54711}{54754}He loved|the eldest daughter.
+{54754}{54836}Sadly, she had eyes|for another.
+{54838}{54893}When boys and girls|live in the same home,
+{54895}{54958}awkward situations|can arise.
+{54960}{55023}Sometimes, I've heard,|even brothers and sisters
+{55023}{55082}develop|certain affections.
+{55085}{55142}And when these affections|become common knowledge,
+{55142}{55236}well, that is an awkward|situation indeed,
+{55236}{55291}especially|in a prominent family.
+{55293}{55375}But prominent families|often forget a simple truth,
+{55375}{55430}I've found.
+{55430}{55480}And which truth is that?
+{55483}{55569}Knowledge is power.
+{55622}{55679}Seize him.
+{55723}{55771}Cut his throat.
+{55799}{55857}Stop. Wait.
+{55859}{55914}I've changed my mind.|Let him go.
+{55986}{56027}Step back three paces.
+{56061}{56118}Turn around.
+{56118}{56159}Close your eyes.
+{56260}{56317}Power is power.
+{56358}{56394}Do see if you can|take some time away from
+{56396}{56442}your coins and your whores
+{56449}{56492}to locate|the Stark girl for me.
+{56492}{56579}I would very much|appreciate it.
+{56814}{56866} You're Ser Alton Lannister?
+{56866}{56929}I am, Your Grace.
+{56929}{57015} I offer your cousins peace | if they meet my terms.
+{57015}{57118}First, your family|must release my sisters.
+{57118}{57207}Second, my father's bones|must be returned to us
+{57207}{57255}so he may rest beside|his brother and sister
+{57255}{57319}in the crypts|beneath Winterfell.
+{57322}{57375}And the remains of all those|who died in his service
+{57375}{57427}must also be returned.
+{57427}{57487}Their families can honor|them with proper funerals.
+{57490}{57562}- An honorable request, Your Grace.|-  Third...
+{57602}{57662}Joffrey and the Queen Regent|must renounce all claim
+{57662}{57725}to dominion of the North.
+{57725}{57777}From this time|till the end of time,
+{57780}{57840}we are a free|and independent kingdom.
+{57840}{57888}The King in the North.
+{57888}{57948}King in the North.
+{57948}{57986}Neither Joffrey|nor any of his men
+{57986}{58041}shall set foot|in our lands again.
+{58044}{58087}If he disregards|this command,
+{58089}{58173}he shall suffer|the same fate as my father,
+{58173}{58276}only I don't need a servant|to do my beheading for me.
+{58278}{58362}These are-- Your Grace,|these are--
+{58362}{58422}these are my terms.
+{58425}{58499}If the Queen Regent and her son|meet them, I'll give them peace.
+{58499}{58571}If not...
+{58571}{58631}I will litter the south|with Lannister dead.
+{58631}{58700}King Joffrey is a Baratheon,|Your Grace.
+{58700}{58744}Oh, is he?
+{58772}{58854}You'll ride at daybreak,|Ser Alton.
+{58854}{58919}That will be all|for tonight.
+{59271}{59321}A word, Your Grace?
+{59365}{59429}You don't have to call me|"Your Grace" when no one's around.
+{59432}{59496}It's not so bad|once you get used to it.
+{59496}{59540}I'm glad someone's|gotten used to it.
+{59542}{59621}The Lannisters are going to reject|your terms, you know?
+{59621}{59664}Of course they are.
+{59664}{59719}We can fight them|in the fields as long as you like,
+{59722}{59811}but we won't beat them until you|take King's Landing.
+{59847}{59921}And we can't take|King's Landing without ships.
+{59923}{59986}My father has ships and men|who know how to sail them.
+{59986}{60029}Men who fought|my father.
+{60029}{60089}Men who fought King Robert|to free themselves
+{60089}{60180}from the yoke of the South,|just like you're doing now.
+{60209}{60281}I'm his only living son.
+{60283}{60357}He'll listen to me.|I know he will.
+{60417}{60494}I'm not a Stark.|I know that.
+{60496}{60566}But your father raised me|to be an honorable man.
+{60609}{60669}We can avenge him|together.
+{60700}{60772}You don't want|Balon Greyjoy for an ally.
+{60772}{60827}I need his ships.|They say he has 200.
+{60827}{60913}They say a million rats|live in the sewers of King's Landing.
+{60913}{60959}Shall we rally them|to fight for us?
+{60961}{61005}I understand you don't|trust Lord Greyjoy.
+{61005}{61117}I don't trust Lord Greyjoy because|he is not trustworthy.
+{61117}{61182}Your father had to go to war|to end his rebellion.
+{61182}{61276}Yes. And now I'm the one|rebelling against the throne.
+{61276}{61331}Before me, it was father.
+{61331}{61371}You married one rebel|and mothered another.
+{61371}{61443}I mothered more than|just rebels,
+{61446}{61501}a fact you seem|to have forgotten.
+{61501}{61549}If I trade the Kingslayer|for two girls,
+{61551}{61604}my bannermen will string me up|by my feet.
+{61606}{61681}You want to leave Sansa|in the Queen's hands?
+{61683}{61731} And Arya--
+{61733}{61805}I haven't heard|a word about Arya.
+{61805}{61846}What are we fighting for|if not for them?
+{61849}{61887}It's more complicated|than that!
+{61887}{61937}You know it is.
+{62285}{62371}It's time for me|to go home.
+{62371}{62441}I haven't seen Bran|or Rickon in months.
+{62465}{62529}You can't go|to Winterfell.
+{62529}{62577}I beg your pardon?
+{62577}{62654}I'll send Rodrik|to watch over the boys
+{62654}{62762}because tomorrow|you'll ride south to the Stormlands.
+{62764}{62812}Why in the name|of all the Gods--
+{62812}{62906}because I need you to negotiate|with Renly Baratheon.
+{62908}{62959}He's rallied|an army of 100,000.
+{62959}{63002}You know him.|You know his family.
+{63002}{63059}I haven't seen Renly Baratheon|since he was a boy.
+{63062}{63098} You have a hundred | other lords--
+{63098}{63191}Which of these lords|do I trust more than you?
+{63191}{63258}If Renly sides with us,
+{63261}{63318}we'll outnumber them|two to one.
+{63318}{63390}When they feel the jaws beginning|to shut, they'll sue for peace.
+{63390}{63455}We'll get the girls back.
+{63457}{63541}Then we'll all|go home... for good.
+{63711}{63783}I will ride at first light.
+{63990}{64076}We will all be together|again soon, I promise.
+{64196}{64258}You've done so well.
+{64289}{64383}Your father|would be... proud.
+{64567}{64639}- Give Lord Renly my regards.|-  King  Renly.
+{64673}{64738}There's a king|in every corner now.
+{65049}{65109}What is all this?
+{65109}{65164}Returning this room|to its proper appearance.
+{65167}{65234}Say what you will about the Targaryens--|they were conquerors.
+{65236}{65304}That is a seat|for a conqueror.
+{65304}{65392}It needs a room to match it,|not vines and flowers.
+{65392}{65450}We can't find Arya Stark.
+{65450}{65503}With luck, she's dead|in a ditch somewhere.
+{65503}{65550}Perhaps. But if not,|we need her.
+{65550}{65606}They'll never give Jaime back|to us for Sansa alone.
+{65608}{65670}I think they might.|They're weak.
+{65670}{65714}They put too much value|on their women.
+{65716}{65807}We need to set our armies|to the task of finding her.
+{65807}{65853}Send out as many men|as we can.
+{65853}{65896}I'm sure if you asked|grandfather--
+{65898}{65994}The King does not ask;|He commands.
+{65994}{66064}And my grandfather's|stupidity in the field of battle
+{66064}{66133}is the reason Robb Stark has|Uncle Jaime in the first place.
+{66135}{66200}His life is in danger.
+{66200}{66239}We're at war.
+{66241}{66315}All our lives|are in danger.
+{66387}{66471}I heard a disgusting lie|about Uncle Jaime.
+{66471}{66510}And you.
+{66538}{66574}Our enemies|will say anything
+{66574}{66622}to weaken your claim|to the throne.
+{66625}{66675}It's not a claim.|The throne is mine.
+{66706}{66756}Of course it is.
+{66804}{66850}No one believes|this foul gossip.
+{66850}{66903}Someone believes it.
+{66934}{66996}Father had|other children?
+{66999}{67059}Besides me and Tommen|and Myrcella?
+{67102}{67150}What are you asking?
+{67150}{67207}I'm asking if he fucked|other women
+{67207}{67246}when he grew tired|of you.
+{67246}{67289}How many bastards|does he have running--
+{67668}{67768}What you just did|is punishable by death.
+{67850}{67915}You will never|do it again.
+{67917}{67962}Never.
+{68106}{68157}That will be all,|Mother.
+{68315}{68365}No, no, no, no.
+{68368}{68435}Do you have any idea|how ridiculous you sound?
+{68435}{68471}Ease into it.
+{68471}{68543}Slowly, with passion.
+{68545}{68634}Oh, yeah.
+{68634}{68727}Go wash yourselves.|Put some clothes on.
+{68727}{68790}Both of you|are working tonight.
+{68881}{68929}We do things|differently here, Daisy.
+{68929}{69025}This isn't some five copper|bawdy house in Hayseed Hall.
+{69025}{69085}- Haystack Hall.|- Wherever you're from.
+{69085}{69130}Our establishment|doesn't cater
+{69130}{69197}to ploughmen|and goat herders.
+{69197}{69248}Lord Olsen.
+{69250}{69291}Taste is|everything here.
+{69291}{69336}Littlefinger's|a fancy man.
+{69336}{69379}Don't call him|Littlefinger.
+{69379}{69413}He doesn't like it.
+{69415}{69473} Lord Baelish.
+{69598}{69660}She pretends she doesn't|speak the common tongue
+{69660}{69722}so that people|will think she's exotic.
+{69722}{69792}She grew up just down the road|in flea bottom.
+{69794}{69854}She's beautiful.
+{69857}{69933}She's a dumb slut, really,|but a lid for every pot.
+{70058}{70111}Lord Commander.
+{70111}{70187}Good to see you...|Again.
+{70540}{70581}You do realize|this establishment
+{70581}{70638}is owned by|Lord Petyr Baelish,
+{70638}{70691}the King's|Master of Coin...
+{70691}{70739}Coin which goes|in many pockets.
+{70739}{70804}- Orders.|- Whose orders?
+{70804}{70876}Someone who doesn't care|what Littlefinger thinks.
+{71298}{71384}No, you can't.|No! Please!
+{71384}{71449}No! Not my Barra!
+{71449}{71530}- Please. Please.|- Enough. Get it done.
+{71533}{71580}-  Kill the bastard. | - No, no!
+{71580}{71640}-  Please. |- Give it here.
+{71643}{71703}No, please.
+{71940}{71995} Spread out. | Search every house.
+{71998}{72058} Every room. | Look in every room.
+{72379}{72456}People shouting )
+{72645}{72705}Gendry!|His name is Gendry.
+{72705}{72751}Where is|the bastard?
+{72751}{72813}The Night's Watch!|Please, stop!
+{72815}{72846}Where?
+{72849}{72918}They took him up the Kingsroad,|heading north.
+{72921}{73007}- How will we know him?|-  He's got a bull's head helmet.
+{73007}{73084}-  He made it himself. |- Find him.
+{73966}{74062}== synchro, korekta by elderman
+{74087}{74212}Odwiedü www.NAPISY.info
+{74222}{74372}www.Cinematix.TV - to Twoje internetowe|kino na øywo. Odwiedü je koniecznie !!!

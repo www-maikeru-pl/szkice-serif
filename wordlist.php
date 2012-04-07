@@ -29,29 +29,39 @@ class Wordlist
   private function merge()
   {
     $wordsToAdd = Array();
+    $wordsToTranslate = Array();
+    $wordsToChallenge = Array();
     foreach($this->words as $word) {
       if (in_array($word, $this->ignored)) {
-        continue;
-      }
-      if (!in_array(strtolower($word), $this->whitelist )) {
-        //var_dump($word);
         continue;
       }
       $trans = $this->translator->get($word);
       $trans['en'] = $word; // to prevent force lovercase
       $trans['sent'] = implode(' ', $this->printSentences($word));
-      $this->wordlist[] = $trans;
+      if (in_array(strtolower($word), $this->whitelist )) {
+        if (strlen($trans['pls']) > 2) {
+          $wordsToAdd[] = $trans;
+        } else {
+          $wordsToTranslate[] = $trans;
+        }
+      } else {
+        $wordsToChallenge[] = $trans;
+      }
     }
+    $this->wordlist = array_merge($wordsToTranslate, $wordsToAdd, $wordsToChallenge);
   }
   private function printSentences($word, $format = true)
   {
+    $word = strtolower($word);
     if (!isset($this->sentences[$word]) || !is_array($this->sentences[$word])) {
         return array(0 => '');
     }
     $sentences = $this->sentences[$word];
     $returnedSentences = Array();
     foreach($sentences as $key => $sentence) {
-      $sentences[$key] = str_replace($word, '<strong>'.$word.'</strong>', $sentence);
+      $sentence = str_replace($word, '<strong>'.$word.'</strong>', $sentence);
+      $sentence = str_replace(ucfirst($word), '<strong>'.ucfirst($word).'</strong>', $sentence);
+      $sentences[$key] = $sentence;
     }
     $maxsentences = 3;
     $i = 0;

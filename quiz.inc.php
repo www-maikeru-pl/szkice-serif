@@ -3,17 +3,15 @@ require_once 'translator.php';
 require_once 'wordlist.php';
 $translator = new Translator();
 
-$txt = file_get_contents('sub.txt');
-$txt = strip_tags($txt);
-$txt = preg_replace("/{\d+}/", "", $txt);
+$txt = Translator::cleanTxt(file_get_contents_utf8('sub.txt'));
 $lines = preg_split("/[\n]+/", $txt);
-$txt = preg_replace("/[<>\d:!?\.,=\/]+/", " ", $txt);
+$txt = Translator::prepareForWordsExplode($txt);
 $txt = str_replace("--", " ", $txt);
 $sentences = Array();
 $ignored = getIgnored();
 $ignored = array_merge(getIgnored(), getLearned());
 foreach($lines as $line) {
-  $lineTxt = preg_replace("/[<>\d:!?\.,=\/]+/", " ", $line);
+  $lineTxt = $txt = Translator::prepareForWordsExplode($line);
   $lineTxt = str_replace("--", " ", $lineTxt);
   $sentWords = preg_split("/[\s]+/", $lineTxt);
   foreach($sentWords as $sentWord) {
@@ -190,3 +188,11 @@ foreach($popularity as $words) {
   }
 }
 $wordList = new WordList($allWords, $sentences, $translator);
+
+
+
+function file_get_contents_utf8($fn) { 
+     $content = file_get_contents($fn); 
+      return mb_convert_encoding($content, 'UTF-8', 
+          mb_detect_encoding($content, 'UTF-8, ISO-8859-1', true)); 
+} 

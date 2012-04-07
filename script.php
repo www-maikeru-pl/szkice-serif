@@ -6,17 +6,15 @@ $translator = new Translator();
 drawBegin();
 drawTextarea();
 
-$txt = file_get_contents('sub.txt');
-$txt = strip_tags($txt);
-$txt = preg_replace("/{\d+}/", "", $txt);
+$txt = Translator::cleanTxt(file_get_contents_utf8('sub.txt'));
 $lines = preg_split("/[\n]+/", $txt);
-$txt = preg_replace("/[<>\d:!?\.,=\/\";]+/", " ", $txt);
+$txt = Translator::prepareForWordsExplode($txt);
 $txt = str_replace("--", " ", $txt);
 $sentences = Array();
 $ignored = getIgnored();
 foreach($lines as $line) {
-  $lineTxt = preg_replace("/[<>\d:!?\.,=\/]+/", " ", $line);
-  $lineTxt = str_replace("--", " ", $lineTxt);
+  $lineTxt = Translator::prepareForWordsExplode($line);
+  $lineTxt = strtolower($lineTxt);
   $sentWords = preg_split("/[\s]+/", $lineTxt);
   foreach($sentWords as $sentWord) {
     $sentWord = trim($sentWord);
@@ -31,6 +29,7 @@ foreach($sentences as $key => $value) {
 //  var_dump($sentences[$key]);
 }
 //var_dump($sentences);
+
 $words = preg_split("/[\s]+/", $txt);
 //var_dump($words);
 
@@ -71,6 +70,7 @@ foreach($popularity as $words) {
     $allWords[] = $word;
   }
 }
+//var_dump($allWords);
 $wordList = new WordList($allWords, $sentences, $translator);
 $list = $wordList->getList();
 printAllList($list);
@@ -85,9 +85,8 @@ function printAllList($list) {
     echo "</td><td>";
     echo $word['sent'];
     echo "</td>";
-    $phon = $word['phons'];
-    $pl = transField($identifier, $word['en'], $word['pls']);
-    echo "<td>{$phon}</td><td><strong>{$word['en']}</strong></td><td>{$pl}</td>";
+    $edit = transField($identifier, $word);
+    echo "<td><strong>{$word['en']}</strong></td><td>{$edit}</td>";
     echo "</td><td>";
     echo returnLinks($word);
     echo "</tr>\n";
@@ -188,12 +187,24 @@ EOT;
   }
 }
 
-function transField($fieldId, $en, $pl)
+function transField($fieldId, $word)
 {
-  $pl = htmlspecialchars($pl);
+  $word['pls'] = htmlspecialchars($word['pls']);
+  $word['phons'] = htmlspecialchars($word['phons']);
   return <<<EOT
-  <textarea rows="4" cols="50" id="trans-{$fieldId}"/>{$pl}</textarea>
-  <button onclick="getDef('{$en}', 'trans-{$fieldId}');">get definition</button>
-  <button onclick="updateTrans('{$en}', 'trans-{$fieldId}');">update translation</button>
+  <button onclick="updateTrans('{$word['en']}', 'trans-{$fieldId}', 'phon-{$fieldId}');">update translation</button>
+  <br />
+  <input value="{$word['phons']}" type="text" id="phon-{$fieldId}"/></input>
+  <br />
+  <button onclick="getPhon('{$word['en']}', 'phon-{$fieldId}');">get phonetic</button>
+  <button onclick="getDef('{$word['en']}', 'trans-{$fieldId}');">get definition</button>
+  <br />
+  <textarea rows="4" cols="50" id="trans-{$fieldId}"/>{$word['pls']}</textarea>
 EOT;
 }
+
+function file_get_contents_utf8($fn) { 
+     $content = file_get_contents($fn); 
+      return mb_convert_encoding($content, 'UTF-8', 
+          mb_detect_encoding($content, 'UTF-8, ISO-8859-1', true)); 
+} 

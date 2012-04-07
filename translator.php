@@ -42,21 +42,36 @@ class Translator
       //$this->db->query("insert into trans(en,enPhon,pl) values ('{$en}', '{$word['fon']}', '{$word['trans']}');");
     }
   }
-  public function updatePl($en, $pl)
+  public function updatePl($en, $pl, $phon)
   {
     $en = trim(strtolower($en));
     $pl = trim($pl);
     $en = $this->db->escapeString($en);
     $pl = $this->db->escapeString($pl);
+    $phon = $this->db->escapeString($phon);
     $existsQuery = "select pl from trans where en = '{$en}';";
     if (null === $this->db->querySingle($existsQuery)) {
-      $this->db->query("insert into trans(en,pl) values ('{$en}','{$pl}');");
+      $this->db->query("insert into trans(en,pl,enPhon) values ('{$en}','{$pl}','{$phon}');");
     } else {
-      $this->db->query("update trans set pl = '{$pl}' where en = '{$en}';");
+      $this->db->query("update trans set pl = '{$pl}', enPhon = '{$phon}' where en = '{$en}';");
     }
     if (null === ($result = $this->db->querySingle($existsQuery))) {
       throw new RuntimeException;
     }
     return $result;
+  }
+  public static function cleanTxt($txt)
+  {
+    $txt = strip_tags($txt);
+    $txt = preg_replace("/({\d+}|\|)/", " ", $txt);
+    return $txt;
+  }
+  public static function prepareForWordsExplode($txt)
+  {
+    $txt = preg_replace("/[<>\d:!?\.,=\/\(\)\s]+/", " ", $txt);
+    $txt = preg_replace("/'(s|re|ve|m|ll) /", " ", $txt);
+    $txt = str_replace("--", " ", $txt);
+    //$txt = strtolower($txt);
+    return $txt;
   }
 }
