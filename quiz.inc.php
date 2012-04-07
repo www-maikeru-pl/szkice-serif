@@ -5,6 +5,7 @@ $translator = new Translator();
 
 $txt = file_get_contents('sub.txt');
 $txt = strip_tags($txt);
+$txt = preg_replace("/{\d+}/", "", $txt);
 $lines = preg_split("/[\n]+/", $txt);
 $txt = preg_replace("/[<>\d:!?\.,=\/]+/", " ", $txt);
 $txt = str_replace("--", " ", $txt);
