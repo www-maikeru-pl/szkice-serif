@@ -1,4 +1,4 @@
-<?php require_once 'quiz.inc.php'; ?>
+<?php require_once 'script.inc.php'; ?>
 <?php 
 //print_r($wordList->getList());  
 ?>
@@ -3062,7 +3062,7 @@ body {
             $sent = "<span style='font-size:small;'>{$entry['sent']}</span>";
             $links = returnLinks($entry['en']);
             echo <<<EOT
-<tr><td>0</td><td>{$entry['en']}<br />{$sent}</td><td>{$entry['phons']}</td><td>{$entry['pls']}</td><td>{$links}</td><td>0</td><td>0</td><td>0</td></tr>\n
+<tr><td>0</td><td>{$entry['en']}<br />{$sent}</td><td>/{$entry['phons']}/</td><td>{$entry['pls']}</td><td>{$links}</td><td>0</td><td>0</td><td>0</td></tr>\n
 EOT;
           }
           ?>
