@@ -6,7 +6,9 @@
   <body>
 <?php
 const FIELDS = 4;
-$handle = fopen("test.csv", "r");
+$outFile = __DIR__ . '/out.csv';
+file_put_contents($outFile, "\n\n@@@@@@\n\n"); // clean the file
+$handle = fopen("f1.csv", "r");
 $i = 0;
 while (($rowCsv = fgetcsv($handle, 0, "\t")) !== false) {
   $i++;
@@ -27,12 +29,22 @@ foreach($data as $row) {
   $substRow['phon'] = $row[3];
   $substRow['qSent'] = Qsent::factory($substRow['word'], $substRow['sent'])->getQSent();
   $substData[] = $substRow;
+  $out = "\n{$substRow['def']}\t{$substRow['qSent']}\t{$substRow['word']}\t{$substRow['phon']}\t{$substRow['sent']}";
+  file_put_contents($outFile, $out, FILE_APPEND);
 }
 fclose($handle);
 
+$wrong = 0;
+$correct = 0;
+
 foreach($substData as $line) {
-  //print_r($line);
+  if (strlen($line['qSent'])) {
+    $correct++;
+  } else {
+    $wrong++;
+  }
 }
+var_dump($correct, $wrong);
 
 class Qsent
 {
@@ -58,18 +70,25 @@ class Qsent
   }
   private function separatePhrase($phrase)
   {
+    //echo $phrase;
     //$phrase = str_replace('@@@', '', $phrase);
     $oldPhrase = $phrase;
     //$phrase = "it is accepted to be, have, etc. something";
     $phrase = str_replace('not be ', 'be not ', $phrase);
     $phrase = str_replace('etc.', '', $phrase);
-    $phrase = preg_replace('/(be|have)[^a-zA-Z]{1,3}(be|have)[^a-zA-Z]{0,2}/', 'be/have', $phrase);
+    $phrase = preg_replace('/(be|have)[^a-zA-Z()]{1,3}(be|have)[^a-zA-Z()]{0,2}/', 'be/have', $phrase);
     //echo "$phrase\n";
     $phrase = preg_replace('/[\s]*\/[\s]*/', '/', $phrase);
     //echo "$phrase\n";
-    $phrase = preg_replace('/(\([^)]+\))/', ' ', $phrase);
+    $phrase = preg_replace('/[(][^()]*[)]/', ' ', $phrase);
+    $phrase = preg_replace('/[(][^()]*[)]/', ' ', $phrase);
+    $phrase = preg_replace('/[(][^()]*[)]/', ' ', $phrase);
     //echo "$phrase\n";
     $phrase = preg_replace('/[^a-zA-Z\'-\/]/', ' ', $phrase);
+    if ( strpos($phrase, '(') !== false || strpos($phrase, ')') !== false) {
+        var_dump($phrase);
+        die();
+    }
     //echo "$phrase\n";
     $phrase = preg_replace('/(^| )it($| )/', ' # ', $phrase);
     $phrase = preg_replace('/(^| )is($| )/', ' be ', $phrase);
@@ -95,7 +114,7 @@ class Qsent
   }
   public function getQSent()
   {
-    return $this->qSent;
+    return trim($this->qSent);
   }
   private function make()
   {
@@ -106,10 +125,11 @@ class Qsent
   }
   private function substSuccess($qSent)
   {
-    return substr_count($qSent, '~') === 1;
+    return substr_count($qSent, '~') > 0;
   }
   private function substitute()
   {
+    $isDebug = false;
     //$this->word = "act on/upon something";
     $phrases = $this->separatePhrase($this->word);
     $debug = Array();
@@ -130,7 +150,6 @@ class Qsent
       }
       list($substituted, $newSent) = $this->trySubstitution($curPhrases, $sent);
       $qSents[] = $newSent;
-      //var_dump($substituted);
       if ($substituted) {
         $curPhrases = array_shift($phrases);
       }
@@ -139,12 +158,14 @@ class Qsent
       }
     }
     $debug['qSents'] = print_r($qSents, true);
-    if (count($curPhrases)) {
+    if ($isDebug && count($curPhrases)) {
       echo "\n=========================\n";
       print_r($debug);
       echo "\n=========================\n";
     }
-    return implode(' ',$qSents);
+    $fullQSents = implode(' ',$qSents);
+    $fullQSents = preg_replace('/[\s]*[~][~ ]+[\s]*/', ' ~ ', $fullQSents);
+    return $fullQSents;
   }
   private function trySubstitution($phrases, $sent)
   {
@@ -196,6 +217,10 @@ class Qsent
     }
     $tmpVerb = strtolower($word);
     if (strlen($tmpVerb) > 1) {
+//      if ( strpos($tmpVerb, '(') !== false || strpos($tmpVerb, ')') !== false || strpos($tmpVerb, '/') !== false) {
+//        var_dump($tmpVerb, $word, $sent);
+//        die();
+//      }
       $tmpVerbWithoutLastLetter = substr($tmpVerb, 0, -1);
       $tmpVerbLastLetter = substr($tmpVerb, -1);
       $afterSent = preg_replace("/^($tmpVerbWithoutLastLetter)($tmpVerbLastLetter)?(ied|ies|ed|d|ing|st|est|s)$/", '~', strtolower($sent));
